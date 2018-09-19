@@ -11,7 +11,7 @@
     "type": "git",
     "url": ""
   },
-  "author": "215696013@qq.com",
+  "author": "",
   "license": "MIT",
   "dependencies": {
     "normalize.css": "^8.0.0"
