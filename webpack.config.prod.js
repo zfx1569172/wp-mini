@@ -39,8 +39,8 @@ let webpackConfig = {
     // 配置出口  
     output: {
         path: path.join(__dirname, "./dist/"),
-        filename: 'static/js/[name].[hash:7].js',
-        publicPath: './',
+        filename: './static/js/[name].[hash:7].js',
+        publicPath: '',
     },
     module: {
         rules: [
@@ -66,7 +66,7 @@ let webpackConfig = {
                 loader: 'url-loader',
                 options: {
                     limit: 10000,
-                    name: 'static/img/[name].[hash:7].[ext]'
+                    name: '/static/img/[name].[hash:7].[ext]'
                 }
             },
             {
@@ -107,7 +107,7 @@ let webpackConfig = {
             parallel: true
         }),
         new ExtractTextPlugin({
-            filename: 'static/css/[name].[hash:7].css'
+            filename: './static/css/[name].[hash:7].css'
         }),
         //设置每一次build之前先删除dist  
         new CleanWebpackPlugin(
