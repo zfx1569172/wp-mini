@@ -4,7 +4,7 @@
   "description": "bootstrap of mutipages",
   "main": "index.js",
   "scripts": {
-    "build": "webpack --config webpack.config.prod.js",
+    "build": "webpack --config webpack.config.build.js",
     "dev": "webpack-dev-server --hot --inline  --watch --host 0.0.0.0 --config webpack.config.dev.js"
   },
   "repository": {
