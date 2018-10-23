@@ -4,12 +4,16 @@ webpack.config.build.js/webpack.config.dev.js里增加新页面
 
 
 
-var pageConfig = [{
-    name: 'index',
-    html: 'home/index.html',
-    jsEntry: 'home/index.js'
-},{
-    name: 'about',
-    html: 'about/about.html',
-    jsEntry: 'about/about.js'
-}];
+		var pageConfig = [{
+		    name: 'index',
+		    html: 'home/index.html',
+		    jsEntry: 'home/index.js'
+		},{
+		    name: 'about',
+		    html: 'about/about.html',
+		    jsEntry: 'about/about.js'
+		}];
+
+		let $ = window.jQuery = require("jquery");
+		require("bootstrap");
+		import 'bootstrap/dist/css/bootstrap.css';
